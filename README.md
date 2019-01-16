@@ -1,2 +1,2 @@
 # LittleBill
-demo
+![Image text](LittleBill/Preview.png)
