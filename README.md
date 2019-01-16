@@ -1,2 +1,2 @@
 # LittleBill
-![Image text](LittleBill/Preview.png)
+![Image text](https://github.com/suidongyang/LittleBill/blob/master/Preview.png?raw=true)
