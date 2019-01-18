@@ -1,2 +1,2 @@
-# 小账单-简单记账
+# Preview
 ![Image text](https://github.com/suidongyang/LittleBill/blob/master/Preview.png?raw=true)
