@@ -74,7 +74,8 @@ const NSInteger kBudgetCateoryBoardTag = 2017;
     budgetField.textColor = kDarkTextColor;
 //    budgetField.tintColor = kDarkTextColor;
     budgetField.placeholder = @"¥500";
-    [budgetField setValue:[UIColor grayColor] forKeyPath:@"_placeholderLabel.textColor"];
+    //bug
+//    [budgetField setValue:[UIColor grayColor] forKeyPath:@"_placeholderLabel.textColor"];
     budgetField.textAlignment = NSTextAlignmentCenter;
     budgetField.keyboardType = UIKeyboardTypeNumberPad;
     budgetField.delegate = self;

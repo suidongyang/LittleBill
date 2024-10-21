@@ -8,10 +8,15 @@
 
 #import "CategoryButton.h"
 
-@implementation CategoryButton
+@implementation CategoryButton {
+    BOOL _isLayouting;
+}
 
 - (void)layoutSubviews {
     [super layoutSubviews];
+    
+    if (_isLayouting) return;
+    _isLayouting = YES;
     
     self.titleLabel.font = [UIFont systemFontOfSize:13];
     [self setTitleColor: [UIColor darkGrayColor] forState:UIControlStateNormal];
@@ -19,7 +24,7 @@
     
     self.titleLabel.text = @"类别";
     [self.titleLabel sizeToFit];
-    self.titleLabel.width = self.width + 10;
+    self.titleLabel.width = self.width + 30;
     self.imageView.frame = CGRectMake(0, 0, 36, 36);
     
     self.imageView.x = 0.5 * (self.width - self.imageView.width);
@@ -31,7 +36,7 @@
     self.layer.cornerRadius = 4;
     self.layer.masksToBounds = YES;
     
-    
+    _isLayouting = NO;
     
 }
 

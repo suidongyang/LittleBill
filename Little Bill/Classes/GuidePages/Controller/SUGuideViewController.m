@@ -197,7 +197,8 @@ static NSString * const kBudgetCellId = @"kBudgetCellId";
     budgetField.textAlignment = NSTextAlignmentCenter;
     budgetField.keyboardType = UIKeyboardTypeNumberPad;
     budgetField.placeholder = @"¥0";
-    [budgetField setValue:[UIColor grayColor] forKeyPath:@"_placeholderLabel.textColor"];
+    //bug
+//    [budgetField setValue:[UIColor grayColor] forKeyPath:@"_placeholderLabel.textColor"];
 //    budgetField.keyboardAppearance = UIKeyboardAppearanceLight;
     budgetField.delegate = self;
     
